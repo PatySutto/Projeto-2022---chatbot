@@ -1,30 +1,73 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Alecrim</title>
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <style>
-    body { padding-top: 50px; }
-  </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+
+        }
+        body{
+            background-image: url("https://img.freepik.com/fotos-gratis/interior-do-restaurante_1127-3394.jpg?w=996&t=st=1653518808~exp=1653519408~hmac=8f6bc35d60f79d1c1954f10ba95c267e955ef390df0f4ff21bfc3319671ab883");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        footer, header{
+            position: absolute;
+            color: aliceblue;
+            background-color: black;
+            font-family: 'cambria';
+            width: 100%;
+        
+        }
+        header{
+            height: 10vh;
+        
+        }
+        header h2{
+            position: absolute;
+            left: 3vh;
+            top: 3vh;
+        
+        } 
+
+        footer{
+            height: 10vh;
+            bottom: 0;
+        }
+
+        footer h3{
+            position: absolute;
+            left: 5%;
+            top: 35%;
+            font-size: 2vh;
+        }
+    </style>
 </head>
 <body>
-
-    <div>
-
-        <h1> Colocar uma capa bonitinha, contendo o nome do restaurante e o cardápio </h1>
-
-    </div>
-
-  <div class="container">
-    <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
-    <df-messenger
-      intent="WELCOME"
-      chat-title="Alecrim"
-      agent-id="50cdccb2-0bf3-4819-bc7b-dc98e5d2ed40"
-      language-code="pt-br"
-    ></df-messenger>
-  </div>
+    <header>
+        <h2>Alecrim</h2>
+    </header>
+    <div class="container">
+        <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+        <df-messenger
+          intent="WELCOME"
+          chat-title="Alecrim"
+          agent-id="50cdccb2-0bf3-4819-bc7b-dc98e5d2ed40"
+          language-code="pt-br"
+        ></df-messenger>
+      </div>
     
+
+    <footer>
+        <h3>Desenvolvido por: Leonardo, Márcio e Patricia. </h3>
+    </footer>
 </body>
 </html>
